@@ -1,0 +1,55 @@
+print(*objects, sep=' ', end='\n', file=sys.stdout, flush=False)
+
+*objects - means print can take any number of objects
+sep=' ' - means print will be separated by a space by default
+end='\n' - means print function is going to end with a new line
+
+
+SHORTCUTS FOR TERMINAL:
+code hello.py - created file
+python hello.py - runs program
+ls - list files in folder
+cp - copy file from one place to another
+mv - move file or rename file
+rm - remove/delete file
+mkdir - make a directory that is a folder
+cd - change directories from one folder to another
+rmdir - remove a directory
+clear(ctrl + l) - clear terminal window
+
+
+BUILT-IN CONDITIONALS FOR MATH QUESTIONS:
+> - greater than
+>= - greater than or equal to
+< - less than
+<= - less than or equal to
+= - assignment from right to left
+== - equality, comparing from the left to the right
+!= - not equal to
+
+| - vertical bar (shift + \)
+
+BOOLEAN OPERATORS:
+or -
+not - negates value of a logical expression
+
+LOOPS:
+while -
+for -
+list - []
+continue -
+break -
+return -
+indexing - counting starts from location 0
+len - tells us the length of a list
+dictionaries/dict - keys and values
+
+ERRORS MESSAGES:
+SyntaxError - problem with code
+ValueError - did not follow rules of code
+            - use try, except & else functions ("raise" as well)
+NameError - when variables are not defined in a wrong order of operations
+KeyError -
+UnboundLocalError - cannot access local variable not associated w/ value
+
+breakpoints - what lines of code i want to break
