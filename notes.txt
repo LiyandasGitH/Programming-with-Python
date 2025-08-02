@@ -51,5 +51,37 @@ ValueError - did not follow rules of code
 NameError - when variables are not defined in a wrong order of operations
 KeyError -
 UnboundLocalError - cannot access local variable not associated w/ value
+TypeError - first arg must be str or a tuple of str, not list
+IndentationError - unexpected indent
 
 breakpoints - what lines of code i want to break
+pass - do nothing 
+
+
+ACII (American Standard Code for Information Interchange) CODE:
+(https://www.ascii-code.com) - full ACII code
+
+allows 128 possible values (0-127)
+each character ('A', '1', '?') has a corresponding interger code
+
+'A' - 65
+'Z' - 90
+'a' - 97
+'z' - 122
+'0' - 48
+'9' - 57
+' '(space) - 32
+'\n'(newline) - 10
+
+            letters = [chr(i) for i in range(65, 91)]
+
+chr(i) - converts each int to its corresponding ACII character
+        ['A', 'B', ... 'Z']
+        char(65) - 'A'
+        char(66) - 'B'
+        char(90) - 'Z'
+
+[chr(i) for i in ...] - list comprehension to build the list
+range(65, 91) - generates ints from 65 to 90 (inclusive)
+
+
