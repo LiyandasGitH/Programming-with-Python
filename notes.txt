@@ -43,6 +43,7 @@ return -
 indexing - counting starts from location 0
 len - tells us the length of a list
 dictionaries/dict - keys and values
+slices - subset of a dataset of a list
 
 ERRORS MESSAGES:
 SyntaxError - problem with code
@@ -53,9 +54,12 @@ KeyError -
 UnboundLocalError - cannot access local variable not associated w/ value
 TypeError - first arg must be str or a tuple of str, not list
 IndentationError - unexpected indent
+IndexError - list index is out of range, trying to access an element that does not exist
+AssertionError - fails when boolean expression being used is not true/is false
 
 breakpoints - what lines of code i want to break
-pass - do nothing 
+pass - do nothing
+_ _ name _ _ - automatically set to be "main" when you run a file from command line/terminal
 
 
 ACII (American Standard Code for Information Interchange) CODE:
@@ -84,4 +88,99 @@ chr(i) - converts each int to its corresponding ACII character
 [chr(i) for i in ...] - list comprehension to build the list
 range(65, 91) - generates ints from 65 to 90 (inclusive)
 
+LIBRARIES:
 
+modules - a library that has one/more functions/features built into it
+        - encourage reusablity of code
+        - when you're copying and pasting code, its better to create libraries(modules) for se
+
+random - (docs.python.org/3/library/random.html)
+        - functions that you don't have access to by default
+        - functions you can use at "random"
+        - random.choice(seq)
+        - random.randint(a, b)
+        - random.shuffle(x)
+
+
+import - import the contents of the functions from some module you want to use
+
+from - when importing specific functions from a module
+
+statistics - calculating means, modes or medians or other types of data sets for analysation
+        - (docs.python.org/3/library/statistics)
+
+command-line arguments - allows you to provide arguments that is input to the program of when you're executing at the command line
+
+sys (system) - functions that are specific to the system itself and commands
+        - (docs.python.org/3/library/sys.html)
+        - sys.argv (system argument vector)
+                - lists of all words typed in at prompt before pressing ENTER
+        - sys.exit
+
+package - module implimented on a folder
+        - collection of multiple modules by creating a folder
+
+THIRD PARTY LIBRARIES(PACKAGES):
+
+pip - package manager
+
+packages - third party library that you can download
+              -  PyPI website (pypi.org)
+
+cowsay - (pypi.org/project/cowsay)
+        - allow you to have a cow say something
+
+APIs (application programming interface) - third party services that written code talks to
+        -
+
+requests - allows you to make web/internet requests using python code as though you were a browser
+        - (docs.python-requests.org)
+
+JSON (javascript object notation) - language agnostic format for exchanging data between computers
+        - can any programming language to read and write JSON
+        - (docs.python.org/3/library/json.html)
+
+STYLES:
+
+PEP 8 (python enhancement proposal) - set of proposals that generate to propose new ideas & codify certain standards
+        - tries to standardise what code is supposed to look like
+        - (peps.python.org/pep-0008/)
+
+
+"Readability counts":
+        - a style guide is about consistency
+        - consistency w/ PEP 8 is important
+        - consistency within a project is more important
+        - consistency within one module or function is the most important
+
+indentation - four space indentation all round in python
+tabs or spaces - only spaces
+maximum line length - shold not go past a certain number of characters in one line
+blank lines - allowed for better readability
+imports - should be at the top of your code
+
+pylint - analyses and tries to figure out if thee are mistakes/inconsistencies in your code
+        - (pycodestyle.pycqa.org)
+
+pycodestyle - reformats your code if it is messy, especially style of code, indentation & blank lines are not in accordance w/ the style guide
+
+black - opinionated & makes styling decisions for you
+        - (black.readthedocs.io)
+
+UNIT TESTS:
+
+assert - claim something is true
+pytest - automate testing of your code if you write it, will continue on the test code you've written already (downloadable)
+                - pip install pytest
+                - (docs.pytest.org)
+                - adds try, except, prints & if name == main
+FILE/IO:
+
+open - allows you to specify exactly what you want to read from or write to that file
+        - (docs.python.org/3/library/functions.html#open)
+        -
+
+with - automatically close file within context
+
+sorted - sorting a list in alphabetical order 
+        - (docs.python.org/3/library/functions.html#sorted)
